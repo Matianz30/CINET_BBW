@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CINET.iml" filepath="$PROJECT_DIR$/.idea/CINET.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Cinet.iml" filepath="$PROJECT_DIR$/.idea/Cinet.iml" />
     </modules>
   </component>
 </project>
