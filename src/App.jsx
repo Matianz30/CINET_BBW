@@ -4,40 +4,33 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./colors.scss"
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx"
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
       <>
-        <nav className="navbar navbar-expand-lg background-color-grey">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-              <img src="logo-cinet.png" alt="Bootstrap" width="120px" height="auto"/>
-            </a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Features</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Pricing</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+          <Header/>
 
+          <div className="container" data-aos="fade-up">
+              <h2 className="text-center mb-5 mt-5" id='games'>Favorite Games</h2>
+              <div className="row">
+                  <div className="col-sm text-center">
+                      <img src="/flappybird.jpg" width="70%" className="img-fluid rounded"/>
+                  </div>
+                  <div className="col-sm text-center">
+                      <img src="/snake.png" width="70%" className="img-fluid rounded"/>
+                  </div>
+                  <div className="col-sm text-center">
+                      <img src="/temple-run.png" width="70%" className="img-fluid rounded"/>
+                  </div>
+              </div>
+
+          </div>
+
+          <Footer/>
       </>
   )
 }
