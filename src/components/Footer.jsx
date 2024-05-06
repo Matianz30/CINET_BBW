@@ -22,7 +22,7 @@ function Footer() {
 
                     <div className="text-center p-3 background-color-grey-dark" >
                         © 2024 Copyright:
-                        <a className="text-black" href="/">CINET.com</a>
+                        <a className="text-black" href="/"> CINET.com</a>
                     </div>
                 </footer>
             </section>
