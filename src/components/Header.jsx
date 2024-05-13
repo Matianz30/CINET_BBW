@@ -29,7 +29,7 @@ function Header() {
                                 <Link className="nav-link" to={"/point-shop"}>Point Shop</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/profile">Profile</a>
+                                <Link className="nav-link" to={"/profile"}>Profile</Link>
                             </li>
                         </ul>
                     </div>
