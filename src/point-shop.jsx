@@ -6,6 +6,7 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx"
 import {Col, Row} from "react-bootstrap";
 
+//drip
 function pointshop({points, setPoints}) {
     return (
         <>
