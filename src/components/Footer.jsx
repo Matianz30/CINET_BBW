@@ -2,7 +2,6 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '/src/App.css';
 import '/src/colors.scss';
-import 'bootstrap/dist/js/bootstrap.js'
 
 function Footer() {
     return (
@@ -26,9 +25,11 @@ function Footer() {
 
 
                     {/*Modal*/}
-                    <div
+          <div
               className="modal fade"
               id="enroll"
+              aria-labelledby="enrollLabel"
+              aria-hidden="true"
           >
               <div className="modal-dialog">
                   <div className="modal-content">
