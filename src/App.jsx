@@ -11,66 +11,123 @@ function App() {
     const [count, setCount] = useState(0)
     return (
         <>
-            <Header/>
+            
         {/*Trailer*/}
-        <section className="hero-video">
-          <video
-                  className="hero-video__background"
+        <section >
+          <video 
                   width="100%"
                   height="auto"
                   autoPlay
                   muted
                   loop
               >
-                  <source src="A$AP Rocky - Sundress (Official Video).mp4" type="video/mp4"/>
+                  <source src="KUNG FU PANDA 4  Official Trailer.mp4" type="video/mp4"/>
               </video>
-              <div className="hero-video__content">
+              <div>
                   
               </div>
         </section>
 
-        
-        
-        {/*Movies*/}
-        <section>
-            <div className="container" data-aos="fade-up">
-                <h2 className="text-center mb-5 mt-5" id='games'>Favorite Games</h2>
-                <div className="row">
-                    <div className="col-sm text-center">
-                        <img src="/flappybird.jpg" width="70%" className="img-fluid rounded"/>
-                    </div>
-                    <div className="col-sm text-center">
-                        <img src="/snake.png" width="70%" className="img-fluid rounded"/>
-                    </div>
-                    <div className="col-sm text-center">
-                        <img src="/temple-run.png" width="70%" className="img-fluid rounded"/>
-                    </div>
-                </div>
+        <section className="p-5">
+              <div className="container">
+                  <h2 className="text-center">Movies</h2>
+                  <p className="lead text-center text-white mb-5"></p>
+                  <div className="row g-4">
+                    
+                    <div className="col-md-6 col-lg-3">
+                            <div className="card">
+                              <img src="" className="mb-3 card-img-top"/>
+                                <div className="card-body text-center">
+                                  <h3 className="card-title mb-3">TESTING</h3>
+                                  <a href="" className="btn btn-primary">Book</a>
+                                </div>
+                            </div>
+                      </div>
 
-            </div>
-        </section>
+                      <div className="col-md-6 col-lg-3">
+                            <div className="card">
+                              <img src="" className="mb-3 card-img-top"/>
+                                <div className="card-body text-center">
+                                  <h3 className="card-title mb-3">TESTING</h3>
+                                  <a href="" className="btn btn-primary">Book</a>
+                                </div>
+                            </div>
+                      </div>
 
+                      <div className="col-md-6 col-lg-3">
+                            <div className="card">
+                              <img src="" className="mb-3 card-img-top"/>
+                                <div className="card-body text-center">
+                                  <h3 className="card-title mb-3">TESTING</h3>
+                                  <a href="" className="btn btn-primary">Book</a>
+                                </div>
+                            </div>
+                      </div>
 
+                      <div className="col-md-6 col-lg-3">
+                            <div className="card">
+                              <img src="/flappybird.jpg" className="mb-3 card-img-top"/>
+                                <div className="card-body text-center">
+                                  <h3 className="card-title mb-3">TESTING</h3>
+                                  <a href="" className="btn btn-primary">Book</a>
+                                </div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+   
         {/*Favorite Games*/}
-        <section>
-            <div className="container" data-aos="fade-up">
-                <h2 className="text-center mb-5 mt-5" id='games'>Favorite Games</h2>
-                <div className="row">
-                    <div className="col-sm text-center">
-                        <img src="/flappybird.jpg" width="70%" className="img-fluid rounded"/>
-                    </div>
-                    <div className="col-sm text-center">
-                        <img src="/snake.png" width="70%" className="img-fluid rounded"/>
-                    </div>
-                    <div className="col-sm text-center">
-                        <img src="/temple-run.png" width="70%" className="img-fluid rounded"/>
-                    </div>
-                </div>
 
-            </div>
-        </section>
+          <section className="p-5">
+              <div className="container">
+                  <h2 className="text-center">Favorite Games</h2>
+                  <p className="lead text-center text-white mb-5"></p>
+                  <div className="row g-4">
+                    
+                    <div className="col-md-6 col-lg-3">
+                            <div className="card">
+                              <img src="/temple-run.png" className="mb-3 card-img-top"/>
+                                <div className="card-body text-center">
+                                  <h3 className="card-title mb-3">TESTING</h3>
+                                  <a href="" className="btn btn-primary">Book</a>
+                                </div>
+                            </div>
+                      </div>
 
-            <Footer/>
+                      <div className="col-md-6 col-lg-3">
+                            <div className="card">
+                              <img src="/snake.png" className="mb-3 card-img-top"/>
+                                <div className="card-body text-center">
+                                  <h3 className="card-title mb-3">TESTING</h3>
+                                  <a href="" className="btn btn-primary">Book</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div className="col-md-6 col-lg-3">
+                            <div className="card">
+                              <img src="/snake.png" className="mb-3 card-img-top"/>
+                                <div className="card-body text-center">
+                                  <h3 className="card-title mb-3">TESTING</h3>
+                                  <a href="" className="btn btn-primary">Book</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div className="col-md-6 col-lg-3">
+                            <div className="card">
+                              <img src="/flappybird.jpg" className="mb-3 card-img-top"/>
+                                <div className="card-body text-center">
+                                  <h3 className="card-title mb-3">TESTING</h3>
+                                  <a href="" className="btn btn-primary">Book</a>
+                                </div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
         </>
     )
 }
