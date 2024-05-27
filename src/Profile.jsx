@@ -8,7 +8,7 @@ function profile({name, lastName, avatar}) {
     return (
         <>
             <h1>profile</h1>
-            <div>
+            <div className="profile-margin">
             <div className="text-center p-2 mt-5">
                 <img src={avatar} alt="" className="avatar"/>
             </div>

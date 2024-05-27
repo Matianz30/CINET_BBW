@@ -18,7 +18,7 @@ export default function Main() {
     const [loggedIn, setLoggedIn] = useState(false);
     return (
         <BrowserRouter>
-            <Header/>
+            <Header avatar={avatar}/>
             <Routes>
                 <Route path="/" element={<App />}></Route>
                 <Route path="/games" element={<Games />}></Route>

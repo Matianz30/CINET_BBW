@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "/src/colors.scss"
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({avatar}) {
 
     return (
         <>
@@ -32,6 +32,9 @@ function Header() {
                                 <Link className="nav-link" to={"/profile"}>Profile</Link>
                             </li>
                         </ul>
+                    </div>
+                    <div>
+                        <img src={avatar} className="avatarNav"/>
                     </div>
                 </div>
             </nav>

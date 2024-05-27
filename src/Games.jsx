@@ -10,9 +10,9 @@ function Games() {
 
     return (
         <>
-
+            <div className="games-margin">
             <h1>games</h1>
-
+            </div>
         </>
     )
 }

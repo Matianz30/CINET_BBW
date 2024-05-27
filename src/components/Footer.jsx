@@ -30,6 +30,7 @@ function Footer({ name, setName, lastName, setLastName, avatar, setAvatar,logged
 
     return (
         <>
+            <div className="footer">
             <section className="">
                 <footer className="text-center text-black background-color-grey">
                     {!loggedIn &&
@@ -126,6 +127,7 @@ function Footer({ name, setName, lastName, setLastName, avatar, setAvatar,logged
                     </div>
                 </footer>
             </section>
+            </div>
         </>
     );
 }
