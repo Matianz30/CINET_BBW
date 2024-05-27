@@ -13,6 +13,22 @@ function App() {
         <>
             <Header/>
 
+            <section className="hero-video">
+          <video
+                  className="hero-video__background"
+                  width="100%"
+                  height="auto"
+                  autoPlay
+                  muted
+                  loop
+              >
+                  <source src="A$AP Rocky - Sundress (Official Video).mp4" type="video/mp4"/>
+              </video>
+              <div className="hero-video__content">
+                  
+              </div>
+          </section>
+
             <div className="container" data-aos="fade-up">
                 <h2 className="text-center mb-5 mt-5" id='games'>Favorite Games</h2>
                 <div className="row">
