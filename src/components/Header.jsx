@@ -8,7 +8,7 @@ function Header() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg background-color-grey">
+            <nav className="navbar navbar-expand-lg background-color-grey fixed-top">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
                         <img src="logo-cinet.png" alt="Bootstrap" width="120px" height="auto"/>
