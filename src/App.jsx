@@ -12,8 +12,8 @@ function App() {
     return (
         <>
             <Header/>
-
-            <section className="hero-video">
+        {/*Trailer*/}
+        <section className="hero-video">
           <video
                   className="hero-video__background"
                   width="100%"
@@ -27,8 +27,12 @@ function App() {
               <div className="hero-video__content">
                   
               </div>
-          </section>
+        </section>
 
+        
+        
+        {/*Movies*/}
+        <section>
             <div className="container" data-aos="fade-up">
                 <h2 className="text-center mb-5 mt-5" id='games'>Favorite Games</h2>
                 <div className="row">
@@ -44,6 +48,27 @@ function App() {
                 </div>
 
             </div>
+        </section>
+
+
+        {/*Favorite Games*/}
+        <section>
+            <div className="container" data-aos="fade-up">
+                <h2 className="text-center mb-5 mt-5" id='games'>Favorite Games</h2>
+                <div className="row">
+                    <div className="col-sm text-center">
+                        <img src="/flappybird.jpg" width="70%" className="img-fluid rounded"/>
+                    </div>
+                    <div className="col-sm text-center">
+                        <img src="/snake.png" width="70%" className="img-fluid rounded"/>
+                    </div>
+                    <div className="col-sm text-center">
+                        <img src="/temple-run.png" width="70%" className="img-fluid rounded"/>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
             <Footer/>
         </>
