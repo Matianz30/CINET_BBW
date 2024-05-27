@@ -80,8 +80,7 @@ function Footer({name, setName}) {
                                     >
                                         Close
                                     </button>
-                                    <button type="Submit" class="btn btn-primary" data-bs-dismiss="modal">Submit
-                                    </button>
+                                    <input type={"submit"} class="btn btn-primary" data-bs-dismiss="modal"/>
                                 </div>
                             </div>
                         </div>
