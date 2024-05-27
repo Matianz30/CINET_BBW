@@ -10,7 +10,6 @@ import {Col, Row} from "react-bootstrap";
 function pointshop({points, setPoints}) {
     return (
         <>
-            <Header/>
             <div className="text-center mt-3">
                 <h1>Point shop</h1>
                 <h2 className="mt-2 mb-5">points: {points}</h2>
@@ -53,7 +52,6 @@ function pointshop({points, setPoints}) {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </>
     )
 }

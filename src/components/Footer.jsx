@@ -5,7 +5,12 @@ import '/src/colors.scss';
 import 'bootstrap/dist/js/bootstrap.js'
 
 //drip
-function Footer() {
+function Footer({name, setName}) {
+    const handleNameChange = (event) => {
+        setName(event.target.value);
+        console.log(event.target.value)
+    };
+
     return (
         <>
             <section className="">
@@ -50,7 +55,8 @@ function Footer() {
                                             <label for="first-name" class="col-form-label">
                                                 First Name:
                                             </label>
-                                            <input type="text" class="form-control" id="first-name"/>
+                                            <input type="text" class="form-control" id="first-name"
+                                                   onChange={handleNameChange}/>
                                         </div>
                                         <div className="mb-3">
                                             <label for="last-name" class="col-form-label">Last Name:</label>
@@ -74,7 +80,7 @@ function Footer() {
                                     >
                                         Close
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit
+                                    <button type="Submit" class="btn btn-primary" data-bs-dismiss="modal">Submit
                                     </button>
                                 </div>
                             </div>
