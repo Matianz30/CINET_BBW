@@ -10,9 +10,9 @@ function Games() {
 
     return (
         <>
-            <Header/>
+
             <h1>games</h1>
-            <Footer/>
+
         </>
     )
 }

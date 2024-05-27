@@ -7,7 +7,7 @@ import Footer from "./components/Footer.jsx"
 import {Col, Row} from "react-bootstrap";
 
 //drip
-function pointshop({points, setPoints}) {
+function pointshop({points, setPoints,loggedIn}) {
     return (
         <>
             <div className="text-center mt-3">
@@ -52,6 +52,7 @@ function pointshop({points, setPoints}) {
                     </div>
                 </div>
             </div>
+
         </>
     )
 }

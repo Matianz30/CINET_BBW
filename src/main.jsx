@@ -13,16 +13,19 @@ import Footer from "./components/Footer.jsx";
 export default function Main() {
     const [points, setPoints] = useState(2000)
     const [name, setName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [avatar, setAvatar] = useState('');
+    const [loggedIn, setLoggedIn] = useState(false);
     return (
         <BrowserRouter>
             <Header/>
             <Routes>
                 <Route path="/" element={<App />}></Route>
                 <Route path="/games" element={<Games />}></Route>
-                <Route path="/point-shop" element={<PointShop points={points} setPoints={setPoints}/>}></Route>
-                <Route path="/profile" element={<Profile name={name}/>}></Route>
+                <Route path="/point-shop" element={<PointShop points={points} setPoints={setPoints} loggedIn={loggedIn}/>}></Route>
+                <Route path="/profile" element={<Profile name={name} lastName={lastName} avatar={avatar}/>}></Route>
             </Routes>
-            <Footer name={name} setName={setName}/>
+            <Footer name={name} setName={setName} lastName={lastName} setLastName={setLastName} avatar={avatar} setAvatar={setAvatar} loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
         </BrowserRouter>
     );
 }
