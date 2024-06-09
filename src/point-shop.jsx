@@ -10,16 +10,19 @@ import {Col, Row} from "react-bootstrap";
 function pointshop({points, setPoints,loggedIn}) {
     return (
         <>
-<section >
-        <img src="Kino.jpg" alt="" className='Hero' />
-              
-        </section>
+<div class="hero">
+    <div class="hero-content">
+        <h1>Willkommen in unserem Point-Shop!</h1>
+        <p>Sammeln Sie Punkte und lösen Sie sie gegen exklusive Kinoprämien ein.</p>
+    </div>
+</div>
+
 
 
 <section>        
             <div className="text-center mt-3">
                 <h1>Your Points</h1>
-                <h2 className="mt-2 mb-5">{points} Points</h2>
+                <h2 className="mt-2 mb-5">{points}</h2>
                 <div className="row m-4">
                     <div className="m-4 col-sm Point">
                         <Col>
