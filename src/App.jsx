@@ -16,7 +16,7 @@ function App() {
         <section >
           <video 
                   width="100%"
-                  height="auto  "
+                  height="auto"
                   autoPlay
                   muted
                   loop

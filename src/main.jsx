@@ -9,7 +9,7 @@ import PointShop from "./point-shop.jsx";
 import Profile from "./Profile.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import Maze from "../public/game/index.html";
+
 
 export default function Main() {
     const [points, setPoints] = useState(2000)
@@ -24,7 +24,6 @@ export default function Main() {
             <Routes>
                 <Route path="/" element={<App />}></Route>
                 <Route path="/games" element={<Games />}></Route>
-                <Route path="/games/maze" element={<Maze />}></Route>
                 <Route path="/point-shop" element={<PointShop points={points} setPoints={setPoints} loggedIn={loggedIn}/>}></Route>
                 <Route path="/profile" element={<Profile name={name} lastName={lastName} avatar={avatar} loggedIn={loggedIn}/>}></Route>
             </Routes>
