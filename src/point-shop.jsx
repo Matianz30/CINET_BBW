@@ -8,6 +8,15 @@ import {Col, Row} from "react-bootstrap";
 
 //drip
 function pointshop({points, setPoints,loggedIn}) {
+
+    const handlePoints = (event) => {
+        if (points <= 300) {
+            setPoints(points)
+        } else {
+            setPoints(points - 300)
+            handlePoints()
+        }
+    }
     return (
         <>
 <div class="hero">
@@ -31,7 +40,7 @@ function pointshop({points, setPoints,loggedIn}) {
                             </Row>
                             <Row>
                         <button type="button" className="btn btn-primary img-fluid"
-                                onClick={event => setPoints(points - 300)}>300 Points
+                                onClick={handlePoints}>300 Points
                         </button>
                             </Row>
                         </Col>
@@ -43,7 +52,7 @@ function pointshop({points, setPoints,loggedIn}) {
                             </Row>
                             <Row>
                                 <button type="button" className="btn btn-primary"
-                                        onClick={event => setPoints(points - 300)}>300 Points
+                                        onClick={handlePoints}>300 Points
                                 </button>
                             </Row>
                         </Col>
@@ -55,7 +64,7 @@ function pointshop({points, setPoints,loggedIn}) {
                             </Row>
                             <Row>
                                 <button type="button" className="btn btn-primary"
-                                        onClick={event => setPoints(points - 300)}>300 Points
+                                        onClick={handlePoints}>300 Points
                                 </button>
                             </Row>
                         </Col>

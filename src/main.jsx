@@ -12,7 +12,7 @@ import Footer from "./components/Footer.jsx";
 
 
 export default function Main() {
-    const [points, setPoints] = useState(2000)
+    const [points, setPoints] = useState(500)
     const [name, setName] = useState('');
     const [lastName, setLastName] = useState('');
     const [avatar, setAvatar] = useState('');
@@ -23,7 +23,7 @@ export default function Main() {
             <div className="mt-5">
             <Routes>
                 <Route path="/" element={<App />}></Route>
-                <Route path="/games" element={<Games />}></Route>
+                <Route path="/games" element={<Games points={points} setPoints={setPoints}/>}></Route>
                 <Route path="/point-shop" element={<PointShop points={points} setPoints={setPoints} loggedIn={loggedIn}/>}></Route>
                 <Route path="/profile" element={<Profile name={name} lastName={lastName} avatar={avatar} loggedIn={loggedIn}/>}></Route>
             </Routes>
