@@ -10,6 +10,7 @@ function Games({points, setPoints}) {
 
         const handlePoints = (event) => {
             setPoints(points + 300)
+            alert('Du hast 300 bekommen')
         }
 
     return (

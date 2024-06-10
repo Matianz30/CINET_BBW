@@ -6,12 +6,15 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx"
 import {Col, Row} from "react-bootstrap";
 
+
+
 //drip
 function pointshop({points, setPoints,loggedIn}) {
 
     const handlePoints = (event) => {
         if (points <= 300) {
             setPoints(points)
+            alert('Der Gutschein wurde an Ihre E-Mail gesendet!')
         } else {
             setPoints(points - 300)
             handlePoints()
