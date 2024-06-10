@@ -8,6 +8,7 @@ function Footer({ name, setName, lastName, setLastName, avatar, setAvatar,logged
     const [firstName, setFirstName] = useState('');
     const [lastNameInput, setLastNameInput] = useState('');
 
+
     const handleFirstNameChange = (event) => {
         setFirstName(event.target.value);
     };
@@ -26,6 +27,8 @@ function Footer({ name, setName, lastName, setLastName, avatar, setAvatar,logged
         setName(firstName);
         setLastName(lastNameInput);
         console.log('Submitted name:', firstName, lastNameInput);
+        setAvatar("avatardrip.png");
+        setLoggedIn(true);
     };
 
     return (
@@ -113,7 +116,7 @@ function Footer({ name, setName, lastName, setLastName, avatar, setAvatar,logged
                                             >
                                                 Close
                                             </button>
-                                            <button type="submit" className="btn btn-primary" data-bs-dismiss="modal" onClick={handleAvatarChange}>
+                                            <button type="submit" className="btn btn-primary" data-bs-dismiss="modal">
                                                 Submit
                                             </button>
                                         </div>

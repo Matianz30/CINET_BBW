@@ -26,7 +26,7 @@ export default function Main() {
                 <Route path="/games" element={<Games />}></Route>
                 <Route path="/games/maze" element={<Maze />}></Route>
                 <Route path="/point-shop" element={<PointShop points={points} setPoints={setPoints} loggedIn={loggedIn}/>}></Route>
-                <Route path="/profile" element={<Profile name={name} lastName={lastName} avatar={avatar}/>}></Route>
+                <Route path="/profile" element={<Profile name={name} lastName={lastName} avatar={avatar} loggedIn={loggedIn}/>}></Route>
             </Routes>
             </div>
             <Footer name={name} setName={setName} lastName={lastName} setLastName={setLastName} avatar={avatar} setAvatar={setAvatar} loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
