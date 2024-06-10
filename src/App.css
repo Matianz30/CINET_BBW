@@ -78,4 +78,26 @@ body {
     margin-bottom: 2rem;
 }
 
-
+/*--------*/
+  
+  .video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .video-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .video-content p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  

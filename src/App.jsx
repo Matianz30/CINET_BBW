@@ -22,9 +22,10 @@ function App() {
                   loop
               >
                   <source src="KUNG FU PANDA 4  Official Trailer.mp4" type="video/mp4"/>
-              </video>
-              <div>
-                  
+          </video>
+              <div class="video-content">
+                <h1>Willkommen in unserem Kino</h1>
+                <p>Erleben Sie die besten Filme in atemberaubender Qualität</p>
               </div>
         </section>
 
