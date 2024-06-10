@@ -14,21 +14,21 @@ function App() {
             
         {/*Trailer*/}
         <section >
+          
           <video 
                   width="100%"
                   height="auto"
                   autoPlay
                   muted
-                  loop
-              >
+                  loop>
                   <source src="KUNG FU PANDA 4  Official Trailer.mp4" type="video/mp4"/>
           </video>
-              <div class="video-content">
-                <h1>Willkommen in unserem Kino</h1>
-                <p>Erleben Sie die besten Filme in atemberaubender Qualität</p>
-              </div>
+              
         </section>
+        
 
+
+        {/*Movies*/}
         <section className="p-5">
               <div className="container">
                   <h2 className="text-center">Movies</h2>
@@ -78,55 +78,14 @@ function App() {
               </div>
           </section>
    
-        {/*Favorite Games*/}
+        {/*MAP*/}
 
-          <section className="p-5">
-              <div className="container">
-                  <h2 className="text-center">Favorite Games</h2>
-                  <p className="lead text-center text-white mb-5"></p>
-                  <div className="row g-4">
-                    
-                    <div className="col-md-6 col-lg-3">
-                            <div className="card">
-                              <img src="/temple-run.png" className="mb-3 card-img-top"/>
-                                <div className="card-body text-center">
-                                  <h3 className="card-title mb-3">TESTING</h3>
-                                  <a href="" className="btn btn-primary">Play</a>
-                                </div>
-                            </div>
-                      </div>
-
-                      <div className="col-md-6 col-lg-3">
-                            <div className="card">
-                              <img src="/snake.png" className="mb-3 card-img-top"/>
-                                <div className="card-body text-center">
-                                  <h3 className="card-title mb-3">TESTING</h3>
-                                  <a href="" className="btn btn-primary">Play</a>
-                                </div>
-                            </div>
-                      </div>
-
-                      <div className="col-md-6 col-lg-3">
-                            <div className="card">
-                              <img src="/snake.png" className="mb-3 card-img-top"/>
-                                <div className="card-body text-center">
-                                  <h3 className="card-title mb-3">TESTING</h3>
-                                  <a href="" className="btn btn-primary">Play</a>
-                                </div>
-                            </div>
-                      </div>
-
-                      <div className="col-md-6 col-lg-3">
-                            <div className="card">
-                              <img src="/flappybird.jpg" className="mb-3 card-img-top"/>
-                                <div className="card-body text-center">
-                                  <h3 className="card-title mb-3">TESTING</h3>
-                                  <a href="" className="btn btn-primary">Play</a>
-                                </div>
-                            </div>
-                      </div>
-                  </div>
-              </div>
+          <section>
+          <div class="iframe-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.8898771102145!2d8.619738475010935!3d47.4140891012534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa1bc1b000f9d%3A0x2e2b4b6ebd495d96!2sPath%C3%A9%20Dietlikon!5e0!3m2!1sde!2sch!4v1718023568632!5m2!1sde!2sch" 
+            width="600" height="450"  allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
           </section>
 
         </>
