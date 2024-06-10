@@ -83,6 +83,7 @@ function Footer({ name, setName, lastName, setLastName, avatar, setAvatar,logged
                                                 id="first-name"
                                                 value={firstName}
                                                 onChange={handleFirstNameChange}
+                                                required
                                             />
                                         </div>
                                         <div className="mb-3">
@@ -93,15 +94,16 @@ function Footer({ name, setName, lastName, setLastName, avatar, setAvatar,logged
                                                 id="last-name"
                                                 value={lastNameInput}
                                                 onChange={handleLastNameChange}
+                                                required
                                             />
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="email" className="col-form-label">Email:</label>
-                                            <input type="email" className="form-control" id="email" />
+                                            <input type="email" className="form-control" id="email" required/>
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="phone" className="col-form-label">Phone:</label>
-                                            <input type="tel" className="form-control" id="phone" />
+                                            <input type="tel" className="form-control" id="phone" required/>
                                         </div>
                                         <div className="modal-footer">
                                             <button
